@@ -82,5 +82,6 @@ ma’lumotlar bilan ishlash uchun API; Collection – ma’lumotlar to‘plami.
 ``Farqi =>`` Stream – ishlov beradi, Collection – saqlaydi.
 
 ``Ustoz nimaga ishlamayotganini aniqlay olmadim shuni bir ko'rib beraszda``
+
 ``nega qayerda xato borligini ham bilolmayapman shunday bolsa ham run qilmasdan bilganlarimni yozdim ``
 
