@@ -69,7 +69,7 @@ Dasturda hodisalarni yozib borish (masalan, xatoliklar, boshqa ma'lumotlar).
 ``?``
 
 ## 17.Maven nima?
-``Maven bu ->``
+``?``
 
 ## 18.Behavior Parameterization nima?
 ``?``
