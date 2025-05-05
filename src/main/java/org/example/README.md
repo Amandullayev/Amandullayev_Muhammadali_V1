@@ -21,18 +21,19 @@
 ``4 => ``Executors.newScheduledThreadPool(int n) – rejalashtirilgan (schedule qilingan) ishlar uchun.
 
 ## 4.Callable va Runnable farqi va qachon nima uchun ishlatilinadi?
-``Callable va Runnable farqi =>`` 
-#### Runnable qaytaruvchi type void va bu qiymat qaytarmaydi.
-#### Callable esa type generic bolgani uchun bu qiymat qaytaradi.
+``Callable va Runnable farqi =>``
+Runnable qiymat qaytarmaydi; Callable qiymat qaytaradi va exception otishi mumkin.
 
 ``Nima uchun ishlatilinadi`` 
 bularni qachon ishlatamiz? Agar bizga qiymat kerak bolsa Callable agar kerak bo'lmasa Runnable ishlatsak boladi.
 
 ## 5.Future nima va qachon ishlatiladi?
-
+``Future =>`` Callable natijasini kelajakda olishga imkon beradi.
 ## 6.Future va CompetableFuture ning farqi?
+Future bloklanadi; CompletableFuture esa asinxron ishlashga va chainingga imkon beradi.
 
 ## 7.Volatile non-access modificatori haqida malumot bering. Nima uchun ishlatilinadi.
+threadlar o‘zgaruvchining yangilangan qiymatini ko‘rishi uchun ishlatiladi.
 
 ## 8.Immutable classlar nima uchun kerak va immutable class yaratishimiz uchun qanday shartlar bajarilishi kerak?
 
@@ -41,7 +42,8 @@ bularni qachon ishlatamiz? Agar bizga qiymat kerak bolsa Callable agar kerak bo'
 ``immutable class yaratishimiz uchun qanday shartlar bajarilishi kerak`` buning uchun class type final va fieldlari ham final boladigan class kerak boladi va bu classda setter bolmaydi biz buni faqat chaqirib ishlatish imkoniyatini beradi chunki o'zgartirish uchun setterlar bo'lmaydi.
 
 ## 9.Asynchrone programming nima?
-#### Asinхron dasturlash — bu bir vaqtning o‘zida bir nechta vazifalarni bajaradigan dasturlash usuli.
+
+``Asynchrone => ``kod bloklamasdan natija kutmasdan ishlash usuli.
 
 ## 10.Atomic classlar qanday algoritim orqali race conditionni oldini oladi? Yoki thread-safe?
 
@@ -54,7 +56,7 @@ bularni qachon ishlatamiz? Agar bizga qiymat kerak bolsa Callable agar kerak bo'
 ``ReentrentLock =>`` bu lock qo'yishning mehanik versiyasi bolib unda biz o'zimiz lock qo'yib va ularni o'zimiz ochishimizni ta'minlaydi. ya'ni lock() va unlock() methodlari orqali.
 
 ## 14.Logging Nima?
-``?``
+Dasturda hodisalarni yozib borish (masalan, xatoliklar, boshqa ma'lumotlar).
 
 ## 15.Daemon thread nima?
 ``Daemon thread =>`` Bu asosiy threadga aloqador kichik thread bolib. U 2 xil usulda ishlashdan to'xtashi mumkun.
@@ -76,7 +78,8 @@ bularni qachon ishlatamiz? Agar bizga qiymat kerak bolsa Callable agar kerak bo'
 ``?``
 
 ## 20.Stream nima? Stream va Collection larning farqi nimada?
-
+ma’lumotlar bilan ishlash uchun API; Collection – ma’lumotlar to‘plami.
+``Farqi =>`` Stream – ishlov beradi, Collection – saqlaydi.
 
 ``Ustoz nimaga ishlamayotganini aniqlay olmadim shuni bir ko'rib beraszda``
 ``nega qayerda xato borligini ham bilolmayapman shunday bolsa ham run qilmasdan bilganlarimni yozdim ``
